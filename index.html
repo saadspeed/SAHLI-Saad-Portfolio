@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Saad Sahli — AI & Data Engineer spécialisé en Machine Learning, Data Engineering, Big Data et Generative AI." />
+  <meta name="robots" content="index, follow" />
+  <title>Saad Sahli | AI & Data Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Accueil">
+        <span class="brand-mark">S</span>
+        <span class="brand-text">Saad<span>.</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <a href="#about" data-i18n="nav_about">À propos</a>
+        <a href="#skills" data-i18n="nav_skills">Compétences</a>
+        <a href="#experience" data-i18n="nav_experience">Expérience</a>
+        <a href="#projects" data-i18n="nav_projects">Projets</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Changer le thème">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="lang-btn" id="langToggle" aria-label="Changer la langue">FR</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about" data-i18n="nav_about">À propos</a>
+      <a href="#skills" data-i18n="nav_skills">Compétences</a>
+      <a href="#experience" data-i18n="nav_experience">Expérience</a>
+      <a href="#projects" data-i18n="nav_projects">Projets</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="availability">
+            <span class="status-dot"></span>
+            <span data-i18n="availability">Disponible pour un stage PFE — Février 2027</span>
+          </div>
+
+          <p class="eyebrow">AI • DATA • ENGINEERING</p>
+          <h1>
+            <span data-i18n="hero_hello">Bonjour, je suis</span>
+            <strong>Saad Sahli</strong>
+          </h1>
+
+          <h2>
+            <span data-i18n="hero_role">AI & Data Engineer</span>
+            <span class="gradient-text">/ ML • Big Data • GenAI</span>
+          </h2>
+
+          <p class="hero-description" data-i18n="hero_desc">
+            Je conçois des systèmes intelligents, des pipelines de données scalables
+            et des applications IA orientées métier — du traitement Big Data au déploiement.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              <span data-i18n="see_projects">Voir mes projets</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="btn btn-ghost" href="img/SAHLI Saad CV.pdf" target="_blank">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span data-i18n="download_cv">Télécharger CV</span>
+            </a>
+          </div>
+
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/saad-sahli-716607308/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/saadspeed" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:saad.sahli@emsi-edu.ma" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <div class="profile-shell">
+            <div class="profile-ring"></div>
+            <div class="profile-card">
+              <img src="img/PIC-PRO.png" alt="Portrait de Saad Sahli" />
+              <div class="profile-overlay">
+                <span>AI & Data Engineer</span>
+                <small>Tanger, Morocco</small>
+              </div>
+            </div>
+
+            <div class="floating-card fc-one">
+              <i class="fa-solid fa-brain"></i>
+              <div><b>GenAI & NLP</b><span>LLM • RAG • GraphRAG</span></div>
+            </div>
+
+            <div class="floating-card fc-two">
+              <i class="fa-solid fa-database"></i>
+              <div><b>Data Engineering</b><span>Spark • Kafka • MinIO</span></div>
+            </div>
+
+            <div class="floating-card fc-three">
+              <i class="fa-solid fa-chart-line"></i>
+              <div><b>ML Systems</b><span>XGBoost • TensorFlow</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="Défiler">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="about_label">À PROPOS</p>
+          <h2 data-i18n="about_title">Ingénierie IA & Data, du prototype à la production.</h2>
+          <p data-i18n="about_text">
+            Étudiant ingénieur en dernière année en Intelligence Artificielle et Sciences des Données.
+            Je développe des solutions qui combinent Machine Learning, Data Engineering, Big Data,
+            APIs et architectures modernes afin de transformer les données en décisions utiles.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass-card about-main reveal">
+            <div class="about-icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3 data-i18n="focus_title">Mon focus actuel</h3>
+            <p data-i18n="focus_text">
+              Construire des systèmes AI/Data robustes : ingestion, stockage, traitement distribué,
+              modèles ML/Deep Learning, recherche sémantique, RAG et déploiement via API.
+            </p>
+            <div class="mini-tags">
+              <span>AI Engineering</span><span>Data Engineering</span><span>MLOps</span><span>GenAI</span>
+            </div>
+          </article>
+
+          <div class="stats-grid">
+            <article class="stat-card reveal delay-1"><strong>2</strong><span data-i18n="stat_internships">stages PFA</span></article>
+            <article class="stat-card reveal delay-2"><strong>8+</strong><span data-i18n="stat_ai_projects">projets AI/Data majeurs</span></article>
+            <article class="stat-card reveal delay-3"><strong>5</strong><span data-i18n="stat_years">années après bac</span></article>
+            <article class="stat-card reveal delay-4"><strong>2027</strong><span data-i18n="stat_pfe">PFE recherché</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="skills_label">TECH STACK</p>
+          <h2 data-i18n="skills_title">Compétences orientées AI & Data Engineering</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-head"><i class="fa-solid fa-brain"></i><h3>AI & Data Science</h3></div>
+            <div class="skill-tags">
+              <span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>Computer Vision</span>
+              <span>Generative AI</span><span>TensorFlow</span><span>Keras</span><span>PyTorch</span>
+              <span>Transformers</span><span>RAG</span><span>GraphRAG</span><span>FAISS</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-1">
+            <div class="skill-head"><i class="fa-solid fa-diagram-project"></i><h3>Data Engineering & Big Data</h3></div>
+            <div class="skill-tags">
+              <span>Apache Spark</span><span>PySpark</span><span>Kafka</span><span>Hadoop</span>
+              <span>Airbyte</span><span>MinIO</span><span>ETL / ELT</span><span>Data Lake</span>
+              <span>Data Warehouse</span><span>Data Analytics</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-2">
+            <div class="skill-head"><i class="fa-solid fa-code"></i><h3>Software & APIs</h3></div>
+            <div class="skill-tags">
+              <span>Python</span><span>FastAPI</span><span>React</span><span>Java</span><span>C / C++</span>
+              <span>JavaScript</span><span>REST APIs</span><span>Flask</span><span>Laravel</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-3">
+            <div class="skill-head"><i class="fa-solid fa-database"></i><h3>Data Stores</h3></div>
+            <div class="skill-tags">
+              <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Redis</span>
+              <span>Neo4j</span><span>Cassandra</span><span>Oracle</span><span>SQL Server</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-4">
+            <div class="skill-head"><i class="fa-solid fa-cloud"></i><h3>Cloud & DevOps</h3></div>
+            <div class="skill-tags">
+              <span>Docker</span><span>Kubernetes</span><span>Git</span><span>GitHub</span>
+              <span>Linux</span><span>CI/CD</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-5">
+            <div class="skill-head"><i class="fa-solid fa-chart-pie"></i><h3>BI & Decision Systems</h3></div>
+            <div class="skill-tags">
+              <span>Power BI</span><span>Data Visualization</span><span>Anomaly Detection</span>
+              <span>Recommendations</span><span>Churn Prediction</span><span>Fraud Detection</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="exp_label">EXPÉRIENCE</p>
+          <h2 data-i18n="exp_title">Expériences professionnelles</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">JUIL — AOÛT 2026</div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <span class="company">AVANTEX — Tanger</span>
+                  <h3>Stage PFA — Ingénierie Informatique</h3>
+                </div>
+                <span class="pill">PayWise</span>
+              </div>
+              <p data-i18n="avantex_desc">
+                Développement de PayWise, une plateforme intelligente de gestion et d’analyse de la paie,
+                avec architecture Data & IA, détection d’anomalies et tableaux de bord décisionnels.
+              </p>
+              <div class="stack-line">
+                <span>Spark</span><span>MinIO</span><span>PostgreSQL</span><span>FastAPI</span>
+                <span>React</span><span>Isolation Forest</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">JUIL — AOÛT 2025</div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <span class="company">KOSTAL MAROC — Tanger</span>
+                  <h3>Stage PFA — Ingénierie Informatique</h3>
+                </div>
+              </div>
+              <p data-i18n="kostal_desc">
+                Observation des processus industriels et conception d’une plateforme interactive
+                pour digitaliser la formation opérateurs et les documents de poste de travail.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="projects_label">PROJETS SÉLECTIONNÉS</p>
+          <h2 data-i18n="projects_title">Des projets qui relient Data, IA et produit.</h2>
+        </div>
+
+        <div class="project-filters reveal" role="group" aria-label="Filtrer les projets">
+          <button class="project-filter active" type="button" data-filter="all" aria-pressed="true">
+            <i class="fa-solid fa-border-all" aria-hidden="true"></i>
+            <span data-i18n="filter_all">Tous</span>
+          </button>
+          <button class="project-filter" type="button" data-filter="ai-data" aria-pressed="false">
+            <i class="fa-solid fa-brain" aria-hidden="true"></i>
+            <span data-i18n="filter_ai_data">IA & Data</span>
+          </button>
+          <button class="project-filter" type="button" data-filter="dev" aria-pressed="false">
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            <span data-i18n="filter_dev">Développement</span>
+          </button>
+          <button class="project-filter" type="button" data-filter="programming" aria-pressed="false">
+            <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+            <span data-i18n="filter_programming">Programmation</span>
+          </button>
+          <button class="project-filter" type="button" data-filter="robotics" aria-pressed="false">
+            <i class="fa-solid fa-robot" aria-hidden="true"></i>
+            <span data-i18n="filter_robotics">Robotique</span>
+          </button>
+        </div>
+
+        <div class="featured-projects" id="projectsGrid">
+          <article class="project-card project-featured reveal" data-categories="ai-data">
+            <div class="project-media">
+              <img src="img/PRO-TALENTFLOW.png" alt="TalentFlow AI" onerror="this.src='img/PRO-CV.png'">
+              <span class="project-index">01</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>2026</span><span>AI • NLP • DATA</span></div>
+              <h3>TalentFlow AI</h3>
+              <p data-i18n="talentflow_desc">
+                Plateforme intelligente de Talent Intelligence : analyse de CV, extraction de compétences,
+                matching candidat/poste, recherche sémantique et assistance aux recruteurs.
+              </p>
+              <div class="stack-line">
+                <span>PyTorch</span><span>Transformers</span><span>LLM</span><span>RAG</span><span>GraphRAG</span>
+                <span>NER</span><span>Neo4j</span><span>Spark</span><span>Kafka</span><span>Kubernetes</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-categories="ai-data">
+            <div class="project-media">
+              <img src="img/PRO-ECOMMERCE-AI.png" alt="E-commerce intelligent" onerror="this.src='img/PRO-ECOMMERCE.png'">
+              <span class="project-index">02</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>2026</span><span>BIG DATA • ML • BI</span></div>
+              <h3 data-i18n="ecommerce_title">E-commerce Intelligent</h3>
+              <p data-i18n="ecommerce_desc">
+                Pipeline Big Data complet avec Data Lake, Data Warehouse, BI et système multi-agents.
+                Recommandation, recherche NLP, fraude, churn et génération d’indicateurs métier.
+              </p>
+              <div class="stack-line">
+                <span>PySpark</span><span>Airbyte</span><span>MinIO</span><span>PostgreSQL</span>
+                <span>XGBoost</span><span>FAISS</span><span>FastAPI</span><span>Docker</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="project-card reveal delay-2" data-categories="ai-data dev">
+            <div class="project-media">
+              <img src="img/PRO-SANTE.png" alt="Plateforme santé IA">
+              <span class="project-index">03</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>2025</span><span>DEEP LEARNING • WEB</span></div>
+              <h3 data-i18n="health_title">Plateforme Santé IA</h3>
+              <p data-i18n="health_desc">
+                Application médicale avec détection cutanée par CNN, chatbot médical,
+                prise de rendez-vous et espaces sécurisés patient, médecin et administration.
+              </p>
+              <div class="stack-line">
+                <span>TensorFlow</span><span>Keras</span><span>CNN</span><span>Flask</span>
+                <span>Laravel</span><span>MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-categories="ai-data">
+            <div class="project-media">
+              <img src="img/ADN.png" alt="BioBigData_ADN" onerror="this.src='img/PRO-ADN.png'">
+              <span class="project-index">04</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>2026</span><span>BIG DATA • BIOINFORMATIQUE • HADOOP</span></div>
+              <h3>BioBigData_ADN</h3>
+              <p data-i18n="paywise_desc">
+                Pipeline Big Data distribué pour l’analyse de séquences ADN : nettoyage, conversion FASTA, stockage HDFS, jobs MapReduce, statistiques biologiques, pattern matching, alignement et similarité entre espèces, avec dashboard Streamlit.
+              </p>
+              <div class="stack-line">
+                <span>Python</span><span>Hadoop</span><span>HDFS</span><span>MapReduce</span>
+                <span>Docker</span><span>Streamlit</span><span>Pandas</span><span>FASTA</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-categories="ai-data">
+            <div class="project-media">
+              <img src="img/PRO-BI.png" alt="BioBigData_ADN" onerror="this.src='img/PRO-BI.png'">
+              <span class="project-index">05</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>2026</span><span>BUSINESS INTELLIGENCE • DATA ENGINEERING • BI</span></div>
+              <h3>Analyse & Pilotage Académique</h3>
+              <p data-i18n="paywise_desc">
+              Plateforme décisionnelle de Business Intelligence permettant de centraliser et analyser les données académiques afin de suivre les performances des étudiants, les résultats, les absences, les stages et l’insertion professionnelle à travers des dashboards Power BI interactifs.              </p>
+              <div class="stack-line">                
+                <span>Power BI</span><span>Airbyte</span><span>MinIO</span><span>Apache Spark</span><span>PostgreSQL</span><span>Python</span><span>DAX</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-categories="programming dev">
+            <div class="project-media">
+              <img src="img/PRO-TICKET.png" alt="BioBigData_ADN" onerror="this.src='img/PRO-JAVA.png'">
+              <span class="project-index">06</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>2026</span><span>Programmation</span></div>
+              <h3>Analyse & Pilotage Académique</h3>
+              <p data-i18n="paywise_desc">
+              Application Java de billetterie événementielle avec authentification multi-rôles, achat de tickets, fidélité, promotions, gestion des événements et statistiques, avec persistance MySQL et traitements concurrents.            
+            </p>
+              <div class="stack-line">                
+                <span>JAVA ( POO - MULTITHREADING )</span><span>MySQL</span><span>WEB</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-categories="dev">
+            <div class="project-media">
+              <img src="img/PRO-MOBILE.png" alt="BioBigData_ADN" onerror="this.src='img/PRO-MOBILE.png'">
+              <span class="project-index">07</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>2026</span><span>Développement mobile</span></div>
+              <h3>Gestion des Rendez-vous — Cabinet Médical</h3>
+              <p data-i18n="paywise_desc">
+Application mobile de gestion de cabinet médical avec prise de rendez-vous, gestion des disponibilités, plannings et authentification multi-rôles pour patients, médecins et secrétaire.            </p>
+              <div class="stack-line">                
+                <span>Java</span><span>Android</span><span>Android Studio</span><span>SQLite</span><span>XML</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-categories="programming">
+            <div class="project-media">
+              <img src="img/PRO-DOTNET.png" alt="BioBigData_ADN" onerror="this.src='img/PRO-DOTNET.png'">
+              <span class="project-index">08</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>2026</span><span>Programmation</span></div>
+              <h3>Bibliothèque Numérique — .NET</h3>
+              <p data-i18n="paywise_desc">
+              Application Java de billetterie événementielle avec authentification multi-rôles, achat de tickets, fidélité, promotions, gestion des événements et statistiques, avec persistance MySQL et traitements concurrents.            
+            </p>
+              <div class="stack-line">                
+                <span>C# ( POO )</span><span>.NET</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-categories="ai-data dev">
+            <div class="project-media">
+              <img src="img/BIBLIO.png" alt="BioBigData_ADN" onerror="this.src='img/PRO-BIBLIO.png'">
+              <span class="project-index">09</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>2025</span><span>WEB • FULL-STACK • IA</span></div>
+              <h3>BIBLIO</h3>
+              <p data-i18n="paywise_desc">
+                Plateforme de bibliothèque numérique interactive intégrant gestion des livres et auteurs, authentification sécurisée, paiement en ligne, statistiques et assistant IA pour les recommandations et l’assistance littéraire.
+              </p>
+              <div class="stack-line">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span>
+                <span>Express.js</span><span>MySQL</span><span>OpenAI API</span><span>LLM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-categories="dev">
+            <div class="project-media">
+              <img src="img/HOTEL.png" alt="BioBigData_ADN" onerror="this.src='img/PRO-HOTEL.png'">
+              <span class="project-index">10</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>2024</span><span>WEB • FULL-STACK • BOOKING</span></div>
+              <h3>LUXHOTE</h3>
+              <p data-i18n="paywise_desc">
+                Plateforme web de réservation d’hôtel permettant de consulter les chambres, vérifier les disponibilités, effectuer des réservations et découvrir les services de l’établissement à travers une interface moderne et responsive.              </p>
+              <div class="stack-line">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Php</span>
+                <span>MySQL</span><span>Swiper.js</span>|
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-categories="dev">
+            <div class="project-media">
+              <img src="img/PRO-ASPI-WEB.png" alt="BioBigData_ADN" onerror="this.src='img/PRO-ASPI-WEB.png'">
+              <span class="project-index">11</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>2024</span><span>WEB • E-COMMERCE</span></div>
+              <h3>ElectroSHOP</h3>
+              <p data-i18n="paywise_desc">
+                Boutique e-commerce spécialisée dans les composants électroniques, kits DIY et équipements intelligents, avec catalogue interactif, panier d’achat, gestion des produits et interface responsive.              
+                <div class="stack-line">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Php</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-categories="robotics programming">
+            <div class="project-media">
+              <img src="img/PRO-ASPI.png" alt="BioBigData_ADN" onerror="this.src='img/PRO-ASPI.jpg'">
+              <span class="project-index">12</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>2024</span><span>ROBOTICS • ARDUINO • BLUETOOTH</span></div>
+              <h3>Aspirateur & Éviteur d’Obstacle</h3>
+              <p data-i18n="paywise_desc">
+                Robot aspirateur intelligent capable de se déplacer automatiquement, de détecter et éviter les obstacles grâce à des capteurs ultrasoniques, avec également un mode de contrôle manuel à distance via Bluetooth pour piloter ses déplacements et son système d’aspiration.
+              </p>
+              <div class="stack-line">                
+                <span>Arduino UNO</span><span>HC-SR04</span><span>Bluetooth</span><span>Servo Motor</span><span>DC Motors</span>
+                <span>Arduino C/C++</span><span>Grafcet</span><span>FAST</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-categories="programming">
+            <div class="project-media">
+              <img src="img/PRO-ENI.png" alt="BioBigData_ADN" onerror="this.src='img/PRO-ENI.png'">
+              <span class="project-index">13</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>2023</span><span>Programmation</span></div>
+              <h3>ENI</h3>
+              <p data-i18n="paywise_desc">
+                Un programme complet développé en langage C simulant un système de gestion d’étudiants pour une école d’ingénierie informatique, avec des interfaces dédiées à l’administration et aux étudiants, la gestion des inscriptions, des certificats, des clubs et un jeu-questionnaire.                
+              </p>
+              <div class="stack-line">                
+                <span>Langage C ( Structures - Fonctions - Fichiers - Algorithmique - conio.h)</span>
+              </div>
+            </div>
+          </article>
+
+          
+
+          
+
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container education-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="education_label">FORMATION</p>
+          <h2 data-i18n="education_title">Parcours académique</h2>
+        </div>
+
+        <div class="edu-list reveal delay-1">
+          <article class="edu-card">
+            <span>2024 — EN COURS</span>
+            <h3>Ingénieur d'État — Intelligence Artificielle & Sciences des Données</h3>
+            <p>École Marocaine des Sciences de l’Ingénieur — Tanger</p>
+          </article>
+          <article class="edu-card">
+            <span>2022 — 2024</span>
+            <h3 data-i18n="prep_title">Années préparatoires</h3>
+            <p>École Marocaine des Sciences de l’Ingénieur — Tanger</p>
+          </article>
+          <article class="edu-card">
+            <span>2020 — 2021</span>
+            <h3>Baccalauréat — Physique Chimie</h3>
+            <p>École Al Amana — Tanger</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="certifications">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="cert_label">CERTIFICATIONS</p>
+          <h2 data-i18n="cert_title">Validation continue des compétences</h2>
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card reveal">
+            <i class="fa-solid fa-database"></i>
+            <div>
+              <span>ORACLE</span>
+              <h3>Oracle Database 19c Admin Professional Credential</h3>
+            </div>
+          </article>
+          <article class="cert-card reveal delay-1">
+            <i class="fa-solid fa-brain"></i>
+            <div>
+              <span>IBM</span>
+              <h3>Machine Learning with Python</h3>
+            </div>
+          </article>
+          <article class="cert-card reveal delay-2">
+            <i class="fa-brands fa-python"></i>
+            <div>
+              <span>UNIVERSITY OF MICHIGAN</span>
+              <h3>Programming for Everybody — Python</h3>
+            </div>
+          </article>
+          <!-- Introduction to Big Data -->
+<article class="cert-card reveal">
+  <i class="fa-solid fa-database"></i>
+  <div>
+    <span>UC SAN DIEGO</span>
+    <h3>Introduction to Big Data</h3>
+  </div>
+</article>
+
+<!-- Prompt Engineering for ChatGPT -->
+<article class="cert-card reveal delay-1">
+  <i class="fa-solid fa-brain"></i>
+  <div>
+    <span>VANDERBILT UNIVERSITY</span>
+    <h3>Prompt Engineering for ChatGPT</h3>
+  </div>
+</article>
+
+<!-- Software Engineering -->
+<article class="cert-card reveal delay-2">
+  <i class="fa-solid fa-diagram-project"></i>
+  <div>
+    <span>THE HONG KONG UNIVERSITY OF SCIENCE AND TECHNOLOGY</span>
+    <h3>Software Engineering: Software Design and Project Management</h3>
+  </div>
+</article>
+
+<!-- JavaScript -->
+<article class="cert-card reveal delay-3">
+  <i class="fa-brands fa-js"></i>
+  <div>
+    <span>UNIVERSITY OF MICHIGAN</span>
+    <h3>Interactivity with JavaScript</h3>
+  </div>
+</article>
+
+<!-- NoSQL -->
+<article class="cert-card reveal delay-4">
+  <i class="fa-solid fa-database"></i>
+  <div>
+    <span>IBM</span>
+    <h3>Introduction to NoSQL Databases</h3>
+  </div>
+</article>
+
+<!-- C++ / Object-Oriented Programming -->
+<article class="cert-card reveal delay-5">
+  <i class="fa-solid fa-code"></i>
+  <div>
+    <span>EPFL</span>
+    <h3>Introduction à la programmation orientée objet (en C++)</h3>
+  </div>
+</article>
+
+<!-- Python Web Data -->
+<article class="cert-card reveal">
+  <i class="fa-brands fa-python"></i>
+  <div>
+    <span>UNIVERSITY OF MICHIGAN</span>
+    <h3>Using Python to Access Web Data</h3>
+  </div>
+</article>
+
+<!-- Web Development -->
+<article class="cert-card reveal delay-1">
+  <i class="fa-solid fa-code"></i>
+  <div>
+    <span>JOHNS HOPKINS UNIVERSITY</span>
+    <h3>HTML, CSS, and Javascript for Web Developers</h3>
+  </div>
+</article>
+
+<!-- Agile Project Management -->
+<article class="cert-card reveal delay-2">
+  <i class="fa-solid fa-list-check"></i>
+  <div>
+    <span>GOOGLE</span>
+    <h3>Agile Project Management</h3>
+  </div>
+</article>
+          
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div>
+            <p class="eyebrow" data-i18n="contact_label">CONTACT</p>
+            <h2 data-i18n="contact_title">Construisons quelque chose d'intelligent.</h2>
+            <p data-i18n="contact_text">
+              Je recherche un stage PFE à partir de février 2027 en AI Engineering,
+              Data Engineering, Machine Learning ou Generative AI.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:saad.sahli@emsi-edu.ma">
+              <i class="fa-solid fa-envelope"></i>
+              saad.sahli@emsi-edu.ma
+            </a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/saad-sahli-716607308/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Saad Sahli</p>
+      <p data-i18n="footer_text">AI & Data Engineer • Tanger, Morocco</p>
+    </div>
+  </footer>
+
+  <script src="LANGUE.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
